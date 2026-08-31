@@ -2,108 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.A.R.V.I.S. Mobile Edition</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="J.A.R.V.I.S Mobile Edition - AI Assistant Interface"
+    >
+
+    <title>J.A.R.V.I.S Mobile Edition</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <div class="app">
+    <main class="app">
 
-        <!-- Header -->
+        <!-- HEADER -->
         <header>
+
             <div class="brand">
-                <div class="logo">J</div>
-                <div>
-                    <h1>J.A.R.V.I.S.</h1>
-                    <p>MOBILE EDITION</p>
+
+                <div class="logo">
+                    J
                 </div>
+
+                <div>
+                    <h1>J.A.R.V.I.S</h1>
+
+                    <p>
+                        MOBILE EDITION
+                    </p>
+                </div>
+
             </div>
 
             <div class="status">
-                <span></span> ONLINE
+                <span></span>
+                ONLINE
             </div>
+
         </header>
 
-        <!-- Arc Reactor -->
+
+        <!-- REACTOR -->
         <section class="reactor-section">
+
             <div class="reactor">
+
                 <div class="ring ring-1"></div>
+
                 <div class="ring ring-2"></div>
+
                 <div class="ring ring-3"></div>
+
                 <div class="core">
                     <span>J</span>
                 </div>
+
             </div>
 
-            <h2>SYSTEMS ONLINE</h2>
-            <p>All J.A.R.V.I.S. systems are operational.</p>
+            <h2>
+                J.A.R.V.I.S
+            </h2>
+
+            <p>
+                JUST A RATHER VERY INTELLIGENT SYSTEM
+            </p>
+
         </section>
 
-        <!-- System Cards -->
+
+        <!-- SYSTEM STATUS -->
         <section class="systems">
 
             <div class="system-card">
+
                 <span>⚡</span>
+
                 <div>
-                    <strong>CORE SYSTEM</strong>
-                    <small>Operational</small>
+                    <strong>CORE</strong>
+                    <small>ONLINE</small>
                 </div>
+
             </div>
 
+
             <div class="system-card">
+
                 <span>🧠</span>
+
                 <div>
                     <strong>AI ENGINE</strong>
-                    <small>Ready</small>
+                    <small>READY</small>
                 </div>
+
             </div>
 
+
             <div class="system-card">
-                <span>🛡️</span>
+
+                <span>🌐</span>
+
                 <div>
-                    <strong>SECURITY</strong>
-                    <small>Protected</small>
+                    <strong>NETWORK</strong>
+                    <small>CONNECTED</small>
                 </div>
+
             </div>
 
         </section>
 
-        <!-- Chat -->
+
+        <!-- CHAT -->
         <section class="chat-section">
 
             <div class="section-title">
-                <span>J.A.R.V.I.S. CONSOLE</span>
-                <span class="live">● LIVE</span>
+
+                <span>
+                    J.A.R.V.I.S TERMINAL
+                </span>
+
+                <span class="live">
+                    ● LIVE
+                </span>
+
             </div>
 
+
+            <!-- Messages appear here -->
             <div id="chat">
+
                 <div class="msg ai">
                     J.A.R.V.I.S: Systems online. How may I assist you, Boss?
                 </div>
+
             </div>
 
+
+            <!-- INPUT -->
             <div class="input-area">
+
                 <input
-                    id="msg"
                     type="text"
-                    placeholder="Enter command..."
+                    id="msg"
+                    placeholder="Ask J.A.R.V.I.S..."
                     autocomplete="off"
+                    aria-label="Message"
                 >
 
-                <button id="send">➤</button>
+                <button
+                    id="send"
+                    type="button"
+                    aria-label="Send message"
+                >
+                    ➤
+                </button>
+
             </div>
 
         </section>
 
+
+        <!-- FOOTER -->
         <footer>
-            J.A.R.V.I.S. MOBILE EDITION
+            J.A.R.V.I.S MOBILE EDITION • SYSTEM READY
         </footer>
 
-    </div>
+    </main>
 
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 </html>
